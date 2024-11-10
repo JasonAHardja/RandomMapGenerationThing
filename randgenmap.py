@@ -50,7 +50,6 @@ def add_pellets(grid):
 def draw_grid(grid, pellets):
     for row in range(ROWS):
         for col in range(COLS):
-            # Maze and Game Design Pattern (Visual representation of game states) 
             color = WHITE if grid[row][col] == 1 else BLACK
             pygame.draw.rect(screen, color, (col * TILE_SIZE, row * TILE_SIZE, TILE_SIZE, TILE_SIZE))
 
